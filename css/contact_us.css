@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+}
+.body-conatct-us{
+    min-height: 100vh;
+    background: url(../images/19.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form-container{
+    max-width: 900px;
+    flex: 1;
+}
+.contact-form-container h2{
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.contact-form-container .text-container{
+    background: #000;
+    display: block;
+    color: #fff;
+    border: none;
+    width: calc(90% - 10px);
+    height: 50px;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+.contact-form-container .text-container:first-child{
+    margin-right: 15px;
+}
+.contact-form-container textarea{
+    background: #000;
+    color: #fff;
+    border: none;
+    width:  calc(90% - 10px);
+    padding: 12px;
+    font-size: 16px;
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+.contact-form-container .send-button{
+    /* display: block;
+    margin: 0 auto; */
+    background: #2E94E3;
+    color: #fff;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-radius: 8%;
+    transition-property: background;
+}
+.contact-form-container .send-button:hover{
+    background: #0582e3;
+    cursor: pointer;
+}
+@media (max-width: 950px)
+{
+    .contact-form-container{
+        margin: 30px 20px;
+    }
+    .contact-form-container h2{
+        font-size: 30px;
+        
+    }
+    .contact-form-container .text-container{
+        width: 100%;
+    }
+    .contact-form-container textarea{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .contact-form-container .send-button{
+        display: block;
+        margin: 0 auto;
+    }
+}

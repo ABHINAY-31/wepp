@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Decor</title>
+    <link rel="stylesheet" href="../css/contact_us.css">
+</head>
+<body">
+    <!-- oncontextmenu="return false;" -->
+    <div class="body-conatct-us">
+        <div class="contact-container">
+            <div class="contact-form-container">
+                <h2>Contact Us</h2>
+                <form action="client.php" method="post" onsubmit="return validation()" class="contact">
+                    <input type="text" name="name" id="user" class="text-container" placeholder="Enter Your Name">
+                    <span id="username" style="color: #fff; font-weight: 700; font-size: 14px;"></span>
+
+                    <input type="text" name="number" id="mobileNumber" value="" class="text-container"
+                        placeholder="Enter Your Number">
+                    <span id="mobileno" style="color: #fff; font-weight: 700; font-size: 14px;"></span>
+
+                    <input type="email" name="email" id="emails" value="" class="text-container"
+                        placeholder="Enter Your Email">
+                    <span id="emailidds" style="color: #fff; font-weight: 700; font-size: 14px;"></span>
+
+                    <textarea name="message" rows="6" id="Dream" placeholder="Write About Your Dream Decor"></textarea>
+                    <span id="Dreamdecor" style="color: #fff; font-weight: 700; font-size: 14px;"></span>
+
+                    <input type="submit" name="submit" class="send-button" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../javascript/phone_validation.js"></script>
+    <script src="../javascript/contact_us.js"></script>
+    </body>
+
+</html>
